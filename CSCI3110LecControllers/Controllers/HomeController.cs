@@ -50,6 +50,18 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult InputAgeForm()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult FormProcessor(int age)
+    {
+        return RedirectToAction("Parameter", new { id = $"Your age is {age}" });
+    }
+
+
     public IActionResult Privacy()
     {
         return View();
