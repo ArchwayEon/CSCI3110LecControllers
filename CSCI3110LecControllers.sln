@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSCI3110LecControllers", "CSCI3110LecControllers\CSCI3110LecControllers.csproj", "{37327966-1179-4EE4-A514-A8C00FDB776B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37327966-1179-4EE4-A514-A8C00FDB776B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37327966-1179-4EE4-A514-A8C00FDB776B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37327966-1179-4EE4-A514-A8C00FDB776B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37327966-1179-4EE4-A514-A8C00FDB776B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A54BA9DB-CA55-4BBD-BC3A-FFA7C0C45534}
+	EndGlobalSection
+EndGlobal
