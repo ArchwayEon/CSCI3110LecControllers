@@ -21,7 +21,18 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    name: "variable",
+    pattern: "query/{name}/{*values}",
+    defaults: new { controller = "Home", action = "Variable" });
+app.MapControllerRoute(
+    name: "student",
+    pattern: "student/{enumber}",
+    defaults: new { controller = "Home", action = "Details" });
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "4segments",
+    pattern: "{controller}/{action}/{code}/{idnumber}");
 
 app.Run();
