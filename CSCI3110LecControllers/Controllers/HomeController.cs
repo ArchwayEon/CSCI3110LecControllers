@@ -7,10 +7,12 @@ namespace CSCI3110LecControllers.Controllers;
 
 public class HomeController : Controller
 {
+    private readonly IConfiguration _configuration;
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IConfiguration configuration, ILogger<HomeController> logger)
     {
+        _configuration = configuration;
         _logger = logger;
     }
 
@@ -126,7 +128,17 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult AppName()
+    {
+        string? appname = _configuration.GetValue<string>("AppName") ?? "No name";
+        return Content(appname);
+    }
 
+    public IActionResult ShowALog()
+    {
+        _logger.LogInformation("Information Logged!");
+        return Content("Logger Shown");
+    }
 
     public IActionResult Privacy()
     {
